@@ -44,7 +44,6 @@ class Actor {
         this.size = size;
         this.speed = speed;
         this.persistence = persistence;
-        return this;
     }
 
     public function move(x,y) {
@@ -515,7 +514,6 @@ class Haven extends Actor {
         var startx = Math.round(Math.random() * 400) + 100;
         var starty = Math.round(Math.random() * 200) + 100;
         super(img, startx, starty, size, 0, 0);
-        return this;
     }
         
 }

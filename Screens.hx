@@ -20,7 +20,6 @@ class StartMessage extends TextField {
         var format = new GameFormat();
         format.size = 12;
         setTextFormat(format);
-        return this;
     }
 }
 
@@ -37,7 +36,6 @@ class StartTitle extends TextField {
         titleFormat.bold = true;
         text = "Zombie Protagonist";
         setTextFormat(titleFormat);
-        return this;
     }
 }
 
@@ -49,7 +47,6 @@ class StartIntro1 extends StartMessage {
         height = 15;
         text = "Zombies are taking over the world. And they're invulnerable. Sucks to be you.";
         super();
-        return this;
     }
 }
 
@@ -61,7 +58,6 @@ class StartHero extends StartMessage {
         height = 45;
         text = "This is you. You're smarter than most, and will be able to fend off one or two zombies at a time without infection. Use the arrow keys to move. Hit the spacebar to yell.";
         super();
-        return this;
     }
 }
 
@@ -74,7 +70,6 @@ class StartZombie extends StartMessage {
         height = 45;
         text = "This is your standard garden-variety zombie. You can't kill them. Still, they're slow and stupid, and will follow the nearest human they see. Or, if you yell at them, they'll follow you instead.";
         super();
-        return this;
     }
 }
 
@@ -87,7 +82,6 @@ class StartHuman extends StartMessage {
         height = 45;
         text = "And this is an innocent human. They're also pretty stupid, and will flee nearby zombies, or run around in a random panic. Or, if you yell at them, they'll follow you. If they get touched by a zombie, they'll get infected, and will turn into a zombie.";
         super();
-        return this;
     }
 }
 
@@ -100,7 +94,6 @@ class StartHaven extends StartMessage {
         height = 45;
         text = "This is the safe haven. Get people in, keep zombies (and infected people) out. Nobody can get in unless you're already inside, so have people follow you in, and duck out before the zombies can enter.";
         super();
-        return this;
     }
 }
 
@@ -116,7 +109,6 @@ class StartIntro2 extends StartMessage {
         var format = new GameFormat();
         format.size = 16;
         setTextFormat(format);
-        return this;
     }
 }
 
@@ -145,7 +137,6 @@ class LevelMessage extends TextField {
         text += "Hit the space bar when you're ready.";
         setTextFormat(format);
         setTextFormat(titleFormat, 0, 15);
-        return this;
     }
 }
 
@@ -164,7 +155,6 @@ class DeadMessage extends TextField {
         format.bold = true;
         format.size = 48;
         setTextFormat(format);
-        return this;
     }
 }
 
@@ -183,7 +173,6 @@ class FailedMessage extends TextField {
         format.bold = true;
         format.size = 36;
         setTextFormat(format);
-        return this;
     }
 }
 
@@ -219,7 +208,6 @@ class NumDisplay extends TextField {
         format.align = TextFormatAlign.CENTER;
         setTextFormat(format);
         defaultTextFormat = format;
-        return this;
     }
 
     public function update(number : Int) {
