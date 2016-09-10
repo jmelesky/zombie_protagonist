@@ -200,7 +200,7 @@ class FollowFlee extends Actor {
         super(img, startx, starty, size, speed, persistence);
     }
 
-    public function move(x,y) {
+    public override function move(x,y) {
         var old_x = this.x;
         var old_y = this.y;
         super.move(x,y);
@@ -319,7 +319,7 @@ class Human extends FollowFlee {
     }
 
 
-    public function touchedHaven() {
+    public override function touchedHaven() {
         if (infected_for > 0) {
             Actor.game.infectedEntry(this);
         } else {
@@ -365,7 +365,7 @@ class Zombie extends FollowFlee {
 
 
     // overridden to incorporate patented "lurch" effect
-    public function moveInDirection() {
+    public override function moveInDirection() {
         super.moveInDirection();
         var lurch_rand = Math.random();
         if (lurch_rand > .5) {
@@ -440,7 +440,7 @@ class Zombie extends FollowFlee {
     }
 
 
-    public function touchedHaven() {
+    public override function touchedHaven() {
         Actor.game.infectedEntry(this);
     }
 
