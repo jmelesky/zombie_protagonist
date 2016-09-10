@@ -1,0 +1,4 @@
+-swf Zombie.swf
+-swf-lib zombie_lib.swf
+-swf-version 9
+-main ZombieProtagonist.hx
