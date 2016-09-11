@@ -41,71 +41,71 @@ class StartTitle extends TextField {
 
 class StartIntro1 extends StartMessage {
     public function new() {
+        super();
         x = 30;
         y = 80;
         width = 540;
         height = 15;
         text = "Zombies are taking over the world. And they're invulnerable. Sucks to be you.";
-        super();
     }
 }
 
 class StartHero extends StartMessage {
     public function new() {
+        super();
         x = 60;
         y = 105;
         width = 480;
         height = 45;
         text = "This is you. You're smarter than most, and will be able to fend off one or two zombies at a time without infection. Use the arrow keys to move. Hit the spacebar to yell.";
-        super();
     }
 }
 
 
 class StartZombie extends StartMessage {
     public function new() {
+        super();
         x = 60;
         y = 170;
         width = 480;
         height = 45;
         text = "This is your standard garden-variety zombie. You can't kill them. Still, they're slow and stupid, and will follow the nearest human they see. Or, if you yell at them, they'll follow you instead.";
-        super();
     }
 }
 
 
 class StartHuman extends StartMessage {
     public function new() {
+        super();
         x = 60;
         y = 225;
         width = 480;
         height = 45;
         text = "And this is an innocent human. They're also pretty stupid, and will flee nearby zombies, or run around in a random panic. Or, if you yell at them, they'll follow you. If they get touched by a zombie, they'll get infected, and will turn into a zombie.";
-        super();
     }
 }
 
 
 class StartHaven extends StartMessage {
     public function new() {
+        super();
         x = 60;
         y = 280;
         width = 480;
         height = 45;
         text = "This is the safe haven. Get people in, keep zombies (and infected people) out. Nobody can get in unless you're already inside, so have people follow you in, and duck out before the zombies can enter.";
-        super();
     }
 }
 
 
 class StartIntro2 extends StartMessage {
     public function new() {
+        super();
         x = 30;
         y = 340;
         width = 540;
         height = 60;
         text = "Right. That's it. Arrow keys to move. Spacebar to yell.\n\nAnd don't die.";
-        super();
         var format = new GameFormat();
         format.size = 16;
         setTextFormat(format);
