@@ -248,8 +248,8 @@ class Human extends FollowFlee {
         infected_for = 0;
         var img = new HumanPic();
 
-        var startx;
-        var starty;
+        var startx = 0;
+        var starty = 0;
         var box = FollowFlee.currentHaven;
         var leftbound = box.x - (box.size / 2);
         var rightbound = leftbound + box.size;
